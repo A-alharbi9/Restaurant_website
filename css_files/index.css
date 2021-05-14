@@ -1,0 +1,809 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,100;1,400&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.nav_image_container {
+  height: 100vh;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/restaurant_bg.jpg);
+  width: 100%;
+  background-position: right center;
+  background-size: cover;
+}
+.nav_image__image {
+  height: 50%;
+}
+.nav_container {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav li {
+  color: #fff;
+  list-style: none;
+  padding: 1em;
+}
+nav a {
+  color: #fff;
+  font-size: 2.5em;
+  font-family: "Poppins", sans-serif;
+  border-bottom: none;
+  cursor: pointer;
+}
+nav a:hover {
+  color: aqua;
+}
+.welcome_text {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  transform: translate(0%, 70%);
+}
+.welcome_text header {
+  color: rgb(253, 155, 8);
+  font-size: 5em;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  border-bottom: 3px solid brown;
+}
+.welcome_text p {
+  color: #fff;
+  font-size: 3em;
+  font-weight: 100;
+  font-family: "Poppins", sans-serif;
+}
+.food_item_one {
+  display: flex;
+  width: 100%;
+}
+.food_item_one img {
+  width: 48vw;
+  height: 80vh;
+}
+.food_item_one_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50vw;
+  background-color: rgba(241, 234, 234, 0.4);
+}
+.food_item_one_text h4 {
+  font-size: 1.5em;
+  font-weight: 100;
+  font-family: "Poppins", sans-serif;
+  margin: 1.5em 0px;
+}
+.food_item_one_text h2 {
+  font-size: 3em;
+  font-family: "Poppins", sans-serif;
+}
+.food_item_two {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.food_item_two img {
+  width: 53vw;
+  height: 80vh;
+}
+.food_item_two_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50vw;
+}
+.food_item_two_text h4 {
+  font-size: 1.3em;
+  font-weight: 100;
+  font-family: "Poppins", sans-serif;
+  margin: 1.5em 0px;
+}
+.food_item_two_text h2 {
+  font-size: 3em;
+  font-family: "Poppins", sans-serif;
+}
+.speciality_header {
+  text-align: center;
+  font-size: 3em;
+}
+.speciality_header h3 {
+  color: #fff;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  background: rgb(2, 0, 36);
+  padding: 0.5em;
+}
+.speciality_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/food_four.jpg);
+  background-position: right center;
+  background-size: cover;
+  height: 35em;
+}
+
+.speciality_image_container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1em;
+  margin: 1em;
+  width: 35vw;
+  height: 26em;
+  border-radius: 10px;
+  transform: translateY(0.6em);
+  transition: 0.5s;
+}
+.speciality_image_container img {
+  width: 97%;
+  border-radius: 10px;
+}
+.speciality_image_container h5 {
+  color: #000;
+  font-size: 3em;
+  font-family: "Poppins", sans-serif;
+  overflow-y: hidden;
+}
+.speciality_image_container h6 {
+  font-size: 2em;
+  font-family: "Poppins", sans-serif;
+  overflow-y: hidden;
+}
+.speciality_image_container:hover {
+  background-color: aquamarine;
+  transform: translate(0, -1em);
+  cursor: pointer;
+}
+.booking_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  height: 30em;
+}
+.booking_hours {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  background-color: #242424;
+  padding: 1em;
+  height: 80%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.booking_hours h3 {
+  color: #f1f1f0;
+}
+.booking_hours h4 {
+  color: #6e6b6a;
+}
+.booking_hours h5 {
+  color: #fcf8f4;
+}
+.booking_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #000;
+  width: 40%;
+  height: 80%;
+  box-shadow: 1em 0em 3em #ebedec;
+}
+.booking_form form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  color: #000;
+  padding: 1em;
+}
+.booking_form input {
+  text-align: center;
+  margin: 1em;
+  border: none;
+  border-bottom: 2px solid lightgray;
+  width: 90%;
+  outline: none;
+  transition: 0.5s;
+}
+
+.booking_form input:hover {
+  border-bottom: 2px solid skyblue;
+  width: 100%;
+}
+
+.booking_form button {
+  color: #fff;
+  background-color: rgb(27, 21, 21);
+  padding: 0.5em;
+  border-radius: 10px;
+  width: 60%;
+}
+.booking_form button:hover {
+  background-color: rgb(82, 67, 67);
+  cursor: pointer;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(42 33 33);
+}
+footer li {
+  list-style: none;
+  text-align: center;
+  padding: 0.3em;
+  overflow: hidden;
+}
+footer a {
+  color: #fff;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+footer a:hover {
+  color: greenyellow;
+}
+footer h4 {
+  color: rgb(253, 155, 8);
+  font-size: 1.5em;
+  font-weight: bolder;
+  font-family: "Poppins", sans-serif;
+}
+@media screen and (max-width: 767px) and (min-width: 320px) {
+  .nav_image_container {
+    width: 100vw;
+  }
+  nav a {
+    font-size: 1em;
+  }
+  .welcome_text {
+    transform: translate(0%, 180%);
+  }
+  .welcome_text header {
+    font-size: 3em;
+  }
+  .welcome_text p {
+    font-size: 2em;
+  }
+  .food_container {
+    display: flex;
+    flex-direction: column;
+  }
+  .food_item_one {
+    flex-direction: column;
+    width: 100%;
+  }
+  .food_item_one img {
+    width: 100vw;
+    height: 60vh;
+  }
+  .food_item_one_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    background-color: rgba(241, 234, 234, 0.4);
+  }
+  .food_item_one_text h4 {
+    font-size: 1.5em;
+    font-weight: 100;
+    font-family: "Poppins", sans-serif;
+    margin: 1.5em 0px;
+  }
+  .food_item_one_text h2 {
+    font-size: 3em;
+    font-family: "Poppins", sans-serif;
+  }
+  .food_item_two {
+    display: flex;
+    flex-direction: column;
+  }
+  .food_item_two img {
+    width: 100vw;
+    height: 60vh;
+  }
+  .food_item_two_text {
+    width: 100vw;
+  }
+  .food_item_two_text h4 {
+    font-size: 1.3em;
+    font-weight: 100;
+    font-family: "Poppins", sans-serif;
+    margin: 1.5em 0px;
+  }
+  .food_item_two_text h2 {
+    font-size: 3em;
+    font-family: "Poppins", sans-serif;
+  }
+  .speciality_container {
+    flex-direction: column;
+  }
+  .speciality_header {
+    text-align: center;
+    font-size: 3em;
+  }
+  .speciality_header h3 {
+    font-size: 0.8em;
+    font-weight: 400;
+  }
+  .speciality_container {
+    height: 80em;
+  }
+
+  .speciality_image_container {
+    width: 80vw;
+    height: 80em;
+  }
+  .speciality_image_container img {
+    width: 78vw;
+    height: 80em;
+  }
+  .speciality_image_container h5 {
+    font-size: 2.5em;
+    padding: 1.2em;
+  }
+  .speciality_image_container h6 {
+    font-size: 1.8em;
+    padding: 1em;
+  }
+  .speciality_image_container:hover {
+    background-color: aquamarine;
+
+    transform: translate(0, 0);
+    cursor: pointer;
+  }
+  .booking_container {
+    flex-direction: column;
+    height: 64em;
+  }
+  .booking_hours {
+    height: 50%;
+    width: 100vw;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  .booking_hours h3 {
+    color: #f1f1f0;
+  }
+  .booking_hours h4 {
+    color: #6e6b6a;
+  }
+  .booking_hours h5 {
+    color: #fcf8f4;
+  }
+  .booking_form {
+    width: 100vw;
+    height: 32em;
+  }
+  .booking_form form {
+    width: 100vw;
+  }
+  .booking_form h2 {
+    padding: 1em 0px;
+  }
+  .booking_form input {
+    padding: 0.5em;
+    width: 90vw;
+    outline: none;
+    transition: 0.5s;
+  }
+
+  .booking_form input:hover {
+    border-bottom: 2px solid skyblue;
+    width: 100%;
+  }
+
+  .booking_form button {
+    color: #fff;
+    background-color: rgb(27, 21, 21);
+    padding: 0.5em;
+    border-radius: 10px;
+    width: 60%;
+  }
+  .booking_form button:hover {
+    background-color: rgb(82, 67, 67);
+    cursor: pointer;
+  }
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(42 33 33);
+  }
+  footer li {
+    list-style: none;
+    text-align: center;
+    padding: 0.3em;
+    overflow: hidden;
+  }
+  footer a {
+    color: #fff;
+    font-size: 0.9em;
+    cursor: pointer;
+  }
+  footer a:hover {
+    color: greenyellow;
+  }
+  footer h4 {
+    color: rgb(253, 155, 8);
+    font-size: 0.8em;
+    font-weight: bolder;
+    font-family: "Poppins", sans-serif;
+  }
+}
+@media screen and (max-width: 375px) {
+  .nav_image_container {
+    width: 100vw;
+  }
+  nav a {
+    font-size: 1.5em;
+  }
+  .welcome_text {
+    transform: translate(0%, 160%);
+  }
+  .welcome_text header {
+    font-size: 3.5em;
+  }
+  .welcome_text p {
+    font-size: 2em;
+  }
+  .food_container {
+    display: flex;
+    flex-direction: column;
+  }
+  .food_item_one {
+    flex-direction: column;
+    width: 100%;
+  }
+  .food_item_one img {
+    width: 100vw;
+    height: 60vh;
+  }
+  .food_item_one_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    background-color: rgba(241, 234, 234, 0.4);
+  }
+  .food_item_one_text h4 {
+    font-size: 1.5em;
+    font-weight: 100;
+    font-family: "Poppins", sans-serif;
+    margin: 1.5em 0px;
+  }
+  .food_item_one_text h2 {
+    font-size: 3em;
+    font-family: "Poppins", sans-serif;
+  }
+  .food_item_two {
+    display: flex;
+    flex-direction: column;
+  }
+  .food_item_two img {
+    width: 100vw;
+    height: 60vh;
+  }
+  .food_item_two_text {
+    width: 100vw;
+  }
+  .food_item_two_text h4 {
+    font-size: 1.3em;
+    font-weight: 100;
+    font-family: "Poppins", sans-serif;
+    margin: 1.5em 0px;
+  }
+  .food_item_two_text h2 {
+    font-size: 3em;
+    font-family: "Poppins", sans-serif;
+  }
+  .speciality_container {
+    flex-direction: column;
+  }
+  .speciality_header {
+    text-align: center;
+    font-size: 3em;
+  }
+  .speciality_header h3 {
+    font-size: 0.8em;
+    font-weight: 400;
+  }
+  .speciality_container {
+    height: 55em;
+  }
+
+  .speciality_image_container {
+    width: 90vw;
+    height: 80em;
+  }
+  .speciality_image_container img {
+    width: 85vw;
+    height: 70em;
+  }
+  .speciality_image_container h5 {
+    font-size: 2em;
+    padding: 1em;
+  }
+  .speciality_image_container h6 {
+    font-size: 1em;
+    padding: 1em;
+  }
+  .speciality_image_container:hover {
+    background-color: aquamarine;
+    width: 95vw;
+    transform: translate(0, 0);
+    cursor: pointer;
+  }
+  .booking_container {
+    flex-direction: column;
+    height: 64em;
+  }
+  .booking_hours {
+    height: 50%;
+    width: 100vw;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  .booking_hours h3 {
+    color: #f1f1f0;
+  }
+  .booking_hours h4 {
+    color: #6e6b6a;
+  }
+  .booking_hours h5 {
+    color: #fcf8f4;
+  }
+  .booking_form {
+    width: 100vw;
+    height: 32em;
+  }
+  .booking_form form {
+    width: 100vw;
+  }
+  .booking_form h2 {
+    padding: 1em 0px;
+  }
+  .booking_form input {
+    padding: 0.5em;
+    width: 90vw;
+    outline: none;
+    transition: 0.5s;
+  }
+
+  .booking_form input:hover {
+    border-bottom: 2px solid skyblue;
+    width: 100%;
+  }
+
+  .booking_form button {
+    color: #fff;
+    background-color: rgb(27, 21, 21);
+    padding: 0.5em;
+    border-radius: 10px;
+    width: 60%;
+  }
+  .booking_form button:hover {
+    background-color: rgb(82, 67, 67);
+    cursor: pointer;
+  }
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(42 33 33);
+  }
+  footer li {
+    list-style: none;
+    text-align: center;
+    padding: 0.3em;
+    overflow: hidden;
+  }
+  footer a {
+    color: #fff;
+    font-size: 0.9em;
+    cursor: pointer;
+  }
+  footer a:hover {
+    color: greenyellow;
+  }
+  footer h4 {
+    color: rgb(253, 155, 8);
+    font-size: 0.8em;
+    font-weight: bolder;
+    font-family: "Poppins", sans-serif;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 950px) {
+  .nav_image_container {
+    width: 100vw;
+  }
+  nav a {
+    font-size: 1.8em;
+  }
+  .welcome_text {
+    transform: translate(0%, 150%);
+  }
+  .welcome_text header {
+    font-size: 5.5em;
+  }
+  .welcome_text p {
+    font-size: 2em;
+  }
+  .food_container {
+    display: flex;
+    flex-direction: column;
+  }
+  .food_item_one {
+    flex-direction: column;
+    width: 100%;
+  }
+  .food_item_one img {
+    width: 100vw;
+    height: 60vh;
+  }
+  .food_item_one_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    background-color: rgba(241, 234, 234, 0.4);
+  }
+  .food_item_one_text h4 {
+    font-size: 1.5em;
+    font-weight: 100;
+    font-family: "Poppins", sans-serif;
+    margin: 1.5em 0px;
+  }
+  .food_item_one_text h2 {
+    font-size: 3em;
+    font-family: "Poppins", sans-serif;
+  }
+  .food_item_two {
+    display: flex;
+    flex-direction: column;
+  }
+  .food_item_two img {
+    width: 100vw;
+    height: 60vh;
+  }
+  .food_item_two_text {
+    width: 100vw;
+  }
+  .food_item_two_text h4 {
+    font-size: 1.3em;
+    font-weight: 100;
+    font-family: "Poppins", sans-serif;
+    margin: 1.5em 0px;
+  }
+  .food_item_two_text h2 {
+    font-size: 3em;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .speciality_header {
+    text-align: center;
+    font-size: 3em;
+  }
+  .speciality_header h3 {
+    font-size: 0.8em;
+    font-weight: 400;
+  }
+
+  .speciality_image_container {
+    height: 20em;
+  }
+
+  .speciality_image_container h5 {
+    font-size: 2.5em;
+  }
+  .speciality_image_container h6 {
+    font-size: 2em;
+  }
+  .speciality_image_container:hover {
+    background-color: aquamarine;
+    width: 50vw;
+    transform: translate(0, 0);
+    cursor: pointer;
+  }
+  .booking_container {
+    flex-direction: column;
+    height: 64em;
+  }
+  .booking_hours {
+    height: 50%;
+    width: 100vw;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  .booking_hours h2 {
+    color: #f1f1f0;
+    font-size: 3em;
+  }
+  .booking_hours h4 {
+    color: #6e6b6a;
+    font-size: 1.5em;
+  }
+  .booking_hours h5 {
+    color: #fcf8f4;
+    font-size: 1.1em;
+  }
+  .booking_form {
+    width: 100vw;
+    height: 32em;
+  }
+  .booking_form form {
+    width: 100vw;
+  }
+  .booking_form h2 {
+    font-size: 3em;
+  }
+  .booking_form input {
+    padding: 0.5em;
+    width: 90vw;
+    outline: none;
+    transition: 0.5s;
+    font-size: 1em;
+  }
+
+  .booking_form input:hover {
+    border-bottom: 2px solid skyblue;
+    width: 100%;
+  }
+
+  .booking_form button {
+    color: #fff;
+    background-color: rgb(27, 21, 21);
+    padding: 0.5em;
+    border-radius: 10px;
+    width: 60%;
+  }
+  .booking_form button:hover {
+    background-color: rgb(82, 67, 67);
+    cursor: pointer;
+  }
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(42 33 33);
+  }
+  footer li {
+    list-style: none;
+    text-align: center;
+    padding: 0.3em;
+    overflow: hidden;
+  }
+  footer a {
+    font-size: 1.5em;
+  }
+  footer h4 {
+    font-size: 1.8em;
+  }
+}

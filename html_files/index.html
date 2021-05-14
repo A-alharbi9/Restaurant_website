@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css_files/index.css" />
+    <title>Restauran Website</title>
+    <script src="../javascript/index.js" defer></script>
+  </head>
+  <body>
+    <div class="nav_image_container">
+      <nav id="main" class="nav_container">
+        <ul>
+          <li><a>Home</a></li>
+          <li><a>News</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </nav>
+      <div  class="welcome_text">
+        <header>George Grill</header>
+        <p>a tasteful delight</p>
+      </div>
+    </div>
+
+    <div class="food_container">
+      <div class="food_item_one">
+        <img src="../images/food_two.jpg" alt="food_two" />
+        <div class="food_item_one_text">
+          <h2>The finest of steaks</h2>
+          <h4>
+            we have a great collection of steaks that will satisfy all tastes.
+          </h4>
+        </div>
+      </div>
+      <div class="food_item_two">
+        <img src="../images/food_three.jpg" alt="food_three" />
+        <div class="food_item_two_text">
+          <h2>Are cooked by the best cheifs</h2>
+          <h4>
+            our passion and dedication will ensure that only the best is served.
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="speciality_header">
+      <h3>Our speciality</h3>
+    </div>
+    <div class="speciality_container">
+      <div class="speciality_image_container">
+        <img src="../images/food_eight.jpg" alt="food_eight" />
+        <h5>Resano</h5>
+        <h6>$25</h6>
+      </div>
+      <div class="speciality_image_container">
+        <img src="../images/food_nine.jpg" alt="food_nine" />
+        <h5>Abono</h5>
+        <h6>$30</h6>
+      </div>
+      <div class="speciality_image_container">
+        <img src="../images/food_six.jpg" alt="food_six" />
+        <h5>Eltago</h5>
+        <h6>$25</h6>
+      </div>
+    </div>
+
+    <div class="booking_container">
+      <div class="booking_hours">
+        <h2>Opening Hours</h3>
+        <h4>MONDAY - FRIDAY</h4>
+        <h5>7AM - 11AM (Breakfast)</h5>
+        <h5>11AM - 10PM (Lunch/Dinner)</h5>
+
+        <h4>SATURDAY - SUNDAY</h4>
+        <h5>9AM - 1PM (Brunch)</h5>
+        <h5>1PM - 9PM (Lunch/Dinner)</h5>
+      </div>
+      <div class="booking_form">
+        <h2>Online Booking</h2>
+        <form onsubmit="validateForm(); return false;">
+          
+            <input
+            id="numberInput"
+            type="number"
+            min="1"
+            max="20"
+            placeholder="How many people?"
+            required
+            />
+           
+           <input id="dateInput" type="date" placeholder="Date of reservation?" required />
+            
+           <input id="timeInput" type="time" placeholder="How many people?" required />
+
+           <input id="nameInput" type="text" placeholder="Name of reserver" required autocomplete="off"/>
+           
+          
+           <input id="emailInput" type="email" placeholder="Email" required autocomplete="off" />
+
+          <button id="submitBtn" type="submit" value="Submit" >Book Now</button>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <h4>George Grill</h4>
+      <ul>
+      <li><a>Privacy Police</a></li>
+      <li><a>Terms & Conditions</a></li>
+      <li><a>Reviews</a></li>
+      <li><a>Contact</a></li>
+    </ul>
+    <a href="#main">Back To Top</a>
+    </footer>
+  </body>
+</html>
